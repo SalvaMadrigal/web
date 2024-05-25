@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
+
+body {
+    background-color: #fff;
+    font-family: "Darker Grotesque", sans-serif;
+    color: #1D1A1A;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+    margin: 32px auto;
+}
+
+nav section {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    right: 32px;
+}
+
+a .buttonNav {
+    display: flex;
+}
+
+.buttonNav {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    color: #000;
+    padding: 8px 16px;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 360px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.5s;
+    margin: 0 16px;
+}
+
+.circleSelect {
+    width: 8px;
+    height: 8px;
+    background-color: #FF3D00;
+    border-radius: 360px;
+}
+
+.buttonNav:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    width: 92%;
+    margin: 32px auto 64px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.supBar {
+    border-top: 1px solid #1D1A1A;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.fullImage{
+    width: 92%;
+    margin: 16px auto;
+}
+
+.fullImage img{
+    width: 100%;
+    border-radius: 16px;
+}
+
+.briefInfo{
+    width: 92%;
+    margin: 32px auto;
+}
+
+.brief{
+    display: flex;
+    justify-content: space-between;
+    margin: 64px 0;
+}
+
+.brief h2{
+    width: 50%;
+}
+
+.briefClass{
+    width: 50%;
+}
+
+.briefClass p{
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+.briefClass h4{
+    font-size: 14px;
+    padding: 8px 0;
+}
+.labelInfo{
+    font-weight: 600;
+}
+
+#contact {
+    width: 92%;
+    margin: 32px auto;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.containerContact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+}
+
+.textContact p {
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+.textContact h3{
+    color: #1D1A1A;
+}
+
+.subtitle {
+    color: #FF3D00;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerBar a {
+    color: #1D1A1A;
+    text-decoration: none;
+    padding: 0 8px;
+}
+
+.registrado {
+    font-size: 13px;
+}
+
+.button {
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.button-text {
+    display: inline-block;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 14px;
+}
+
+.button:hover .button-text {
+    animation: text 0.6s cubic-bezier(0, .7, .78, 1);
+}
+
+@keyframes text {
+    0% {
+        translate: 0 0;
+    }
+
+    50% {
+        translate: 0 -100%;
+    }
+
+    51% {
+        translate: 0 100%;
+    }
+
+    100% {
+        translate: 0 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .brief{
+        flex-wrap: wrap;
+    }
+
+    .brief h2 {
+        width: 100%;
+    }
+
+    .briefClass {
+        width: 100%;
+        margin-top: 32px;
+    }
+
+    .briefClass p {
+        font-size: 18px;
+       line-height: 18px;
+        margin: 32px 0;
+    }
+
+    .containerContact {
+        width: 100%;
+    }
+
+    .textContact p {
+        font-size: 58px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    footer div{
+        order: -1;
+        margin-bottom: 20px;
+    }
+}
